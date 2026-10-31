@@ -18,7 +18,7 @@ const content = {
   birthdayIntro: {
     topText: 'HAPPY BIRTHDAY',
     bottomText: 'TO MY BABY',
-    coverImage: 'images/coverr.png',
+    coverImage: '/images/coverr.png',
     nextButton: 'NEXT',
   },
 
