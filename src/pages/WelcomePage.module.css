@@ -1,0 +1,110 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.bgCornerLeft {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: clamp(75px, 15vw, 110px);
+  height: auto;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.12));
+  pointer-events: none;
+  z-index: 2;
+}
+
+.bgCornerRight {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  width: clamp(75px, 15vw, 110px);
+  height: auto;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.12));
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Main card content */
+.contentBox {
+  position: relative;
+  z-index: 10;
+  padding: 2.2rem 1.8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  border: 2px dashed var(--red-pale);
+  border-radius: 28px;
+  max-width: 440px;
+  width: 100%;
+  box-shadow: 0 8px 30px rgba(226, 35, 26, 0.1);
+}
+
+.spidermanStickerWrap {
+  margin-bottom: 0.8rem;
+}
+
+.welcomeSpidermanSticker {
+  width: 130px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.16));
+}
+
+.textGroup {
+  margin-bottom: 1.2rem;
+}
+
+.helloText {
+  font-family: var(--font-hand);
+  font-size: 3.2rem;
+  color: var(--blue);
+  line-height: 1;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.loveText {
+  font-family: var(--font-hand);
+  font-size: 4rem;
+  color: var(--red);
+  line-height: 1;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.question {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  color: var(--blue-dark);
+  margin-bottom: 1.8rem;
+  font-weight: 700;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  background: var(--red) !important;
+  color: #ffffff !important;
+  border-color: var(--red) !important;
+  box-shadow: 0 4px 15px rgba(226, 35, 26, 0.3) !important;
+}
+
+.btnPrimary:hover {
+  background: var(--red-dark) !important;
+  box-shadow: 0 6px 22px rgba(226, 35, 26, 0.45) !important;
+}

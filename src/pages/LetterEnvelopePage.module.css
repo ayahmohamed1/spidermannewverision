@@ -1,0 +1,72 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+}
+
+.card {
+  padding: 2.5rem 1.8rem 2.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  background: #ffffff;
+  border: 3.5px solid #000000;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
+  max-width: 480px;
+  width: 92%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(1.8rem, 5vw, 2.3rem);
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  color: #333333;
+}
+
+.envelopeWrapper {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  padding: 0.5rem;
+}
+
+.envelopeImg {
+  width: clamp(200px, 50vw, 260px);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.18));
+}
+
+.clickHint {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #888888;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.envelopeWrapper:hover .clickHint {
+  color: #e53935;
+}
+
